@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="js/firebase.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Kayıt Ol</h2>
+    <form onsubmit="register(email.value, password.value); return false;">
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Şifre">
+      <button type="submit">Kayıt</button>
+    </form>
+    <p><a href="index.html">Giriş</a></p>
+  </div>
+</body>
+</html>

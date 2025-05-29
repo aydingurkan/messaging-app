@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mesajlaş</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="js/firebase.js" defer></script>
+  <script src="js/chat.js" defer></script>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Mesajlar</h2>
+    <div id="chatBox" class="chat-box"></div>
+    <input id="messageInput" type="text" placeholder="Mesaj yaz...">
+    <button id="sendBtn">Gönder</button>
+    <button onclick="auth.signOut().then(() => location.href='index.html')">Çıkış</button>
+  </div>
+</body>
+</html>
